@@ -15,7 +15,7 @@ app.use("/api/v1/task", taskRouter);
 app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: [process.env.FRONTEND_URL, "http://localhost:8080","http://localhost:5173"],
+    origin: "*",  // only for debugging
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
