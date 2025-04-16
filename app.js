@@ -15,14 +15,14 @@ app.use("/api/v1/task", taskRouter);
 app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: [process.env.FRONTEND_URL, "http://localhost:8080"],
-    methods: ["GET", "POST", "PUT","DELETE"],
+    origin: [process.env.FRONTEND_URL, "http://localhost:8080","http://localhost:5173"],
+    methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
 );
 
 app.get("/", (req, res) => {
-  res.send("<h1>hello bro</h1>");
+  res.send("<h1>hello bro changed from github </h1>");
 });
 
 
