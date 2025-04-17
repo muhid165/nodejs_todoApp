@@ -22,7 +22,7 @@ app.use(
 );
 
 app.get("/", (req, res) => {
-  res.send("<h1>hello bro changed from github </h1>");
+  res.send("<h1>Code changed from github in masterbranch for CORS issue </h1>");
 });
 
 
