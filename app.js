@@ -26,7 +26,7 @@ app.use("/api/v1/task", taskRouter);
 app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin:  "*",   //"http://localhost:5173",  // only for debugging
+    origin: ["http://localhost:5173","https://react-todo-eosin-three.vercel.app"],  // only for debugging
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
